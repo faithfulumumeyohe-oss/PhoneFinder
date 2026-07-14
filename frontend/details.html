@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Phone Details</title>
+        <link rel="stylesheet" href="css/style.css"> 
+    </head>
+    <body>
+
+        <nav class="navbar">
+
+            <h2>
+                📲 PhoneFinder
+            </h2>
+
+            <a href="index.html">Home</a>
+
+        </nav>
+
+        <div class="back-container">
+            <button class="back-btn" onclick="goBack()">
+                ⬅ Back
+            </button>
+        </div>
+
+        <section class="details-container">
+            <div class="details-image">
+
+                <img id="phoneImage">
+
+            </div>
+
+            <div class="details-info">
+                <h1 id="phoneName"></h1>
+
+                <h2 id="phonePrice"></h2>
+
+                <div class="specs">
+                    <p><strong>Brand:</strong><span id="brand"></span></p>
+
+                    <p><strong>RAM:</strong><span id="ram"></span></p>
+
+                    <p><strong>Storage:</strong><span id="storage"></span></p>
+
+                    <p><strong>Battery:</strong><span id="battery"></span></p>
+
+                </div>
+
+                <button class="compare-btn">
+                    📊 Compare Phone
+                </button>
+            </div>
+        
+        </section>
+
+
+        <script src="js/details.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Browse Smartphones</title>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <h2 class="logo">📲 Phone Finder</h2>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="brands.html">Brands</a>
+            </div>
+        </nav>
+<section class="page-header">
+    <h1>All Phones Categories</h1>
+
+    <p>Search and compare smartphones</p>
+</section>
+<div class="filters">
+    <button onclick="filterPhones('All')">All</button>
+    <button onclick="filterPhones('Samsung')">Samsung</button>
+    <button onclick="filterPhones('Apple')">Apple</button>
+    <button onclick="filterPhones('Infinix')">Infinix</button>
+    <button onclick="filterPhones('Itel')">Itel</button>
+    <button onclick="filterPhones('Redmi')">Redmi</button>
+    <button onclick="filterPhones('POCO')">POCO</button>
+    <button onclick="filterPhones('Google')">Google</button>
+    <button onclick="filterPhones('OnePlus')">OnePlus</button>
+    <button onclick="filterPhones('Vivo')">Vivo</button>
+    <button onclick="filterPhones('Tecno')">Tecno</button>
+    <button onclick="filterPhones('Xiaomi')">Xiaomi</button>
+    <button onclick="filterPhones('Nothing')">Nothing</button>
+    <button onclick="filterPhones('Honor')">Honor</button>
+    <button onclick="filterPhones('Motorola')">Motorola</button>
+</div>
+
+<!-- Phone cards will be inserted here -->
+<section id="phoneContainer"></section>
+
+<script src="js/app.js"></script>
+
+    </body>
+</html>
