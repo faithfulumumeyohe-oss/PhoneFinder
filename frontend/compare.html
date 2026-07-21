@@ -22,7 +22,7 @@
     </header>
 <h1 class="compare-title">Compare Phones</h1>
 
-<div class="compare-container">
+<section class="compare-container">
 
     <div class="compare-card" id="leftPhone"></div>
 
@@ -31,7 +31,59 @@
     </div>
 
     <div class="compare-card" id="rightPhone"></div>
+</section>
+
+<div class="compare-action">
+    <button class="compare-specs-btn" onclick="comparePhones()">
+        
+        🔍 Compare Specifications
+
+    </button>
 </div>
+
+<section class="comparison-table" id="comparison">
+
+    <h1>Phone Specifications</h1>
+
+    <table>
+
+        <tr>
+            <th>Specification</th>
+            <th id="phone1Title"></th>
+            <th id="phone2Title"></th>
+        </tr>
+
+        <tr>
+            <td>Brand</td>
+            <td id="phone1Brand"></td>
+            <td id="phone2Brand"></td>
+        </tr>
+
+        <tr>
+            <td>Price</td>
+            <td id="phone1Price"></td>
+            <td id="phone2Price"></td>
+        </tr>
+
+        <tr>
+            <td>RAM</td>
+            <td id="phone1RAM"></td>
+            <td id="phone2RAM"></td>
+        </tr>
+
+        <tr>
+            <td>Storage</td>
+            <td id="phone1Storage"></td>
+            <td id="phone2Storage"></td>
+        </tr>
+
+        <tr>
+            <td>Battery</td>
+            <td id="phone1Battery"></td>
+            <td id="phone2Battery"></td>
+        </tr>
+    </table>
+</section>
 
     <script src="js/compare.js"></script>
 

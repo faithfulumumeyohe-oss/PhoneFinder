@@ -100,7 +100,7 @@ body{
     background: white;
     border-radius: 0 0 15px 15px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(138, 43, 226, .35);
     z-index: 999;
 }
 
@@ -131,9 +131,7 @@ body{
     font-size:18px;
 
     background:white;
-
-    box-shadow:0 10px 30px rgba(138,43,226,.35);
-
+    
     transition:.3s;
 
 }
@@ -144,6 +142,36 @@ body{
 
     box-shadow:0 10px 35px rgba(138,43,226,.6);
 
+}
+
+/* SEARCH BAR (for phones page) */
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#searchPhone {
+    width: 80%;
+    max-width: 600px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 18px;
+}
+
+#searchPhone:focus{
+    box-sizing: 0 0 15px #9d4edd;
+}
+
+@media(max-width:768){
+
+    #searchPhone{
+        width: 90%;
+        font-size: 16px;
+    }
 }
 
 /* HERO */
@@ -425,7 +453,7 @@ body{
 
 .page-header h1 {
     font-size: 60px;
-    color: #fff;
+    color: white;
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
@@ -568,6 +596,95 @@ body{
     color:#8a2be2;
     font-weight: bold;
 }
+
+/* COMPARE BUTTON */
+.compare-action {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.compare-specs-btn {
+    background: #8a2be2;
+    color: white;
+    border: none;
+    padding: 18px 30px;
+    border-radius: 40px;
+    font-size: 18ox;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.compare-specs-btn:hover {
+    background: #6f1dd1;
+    transform: translate(-1px);
+}
+
+.comparison-table{
+
+    width:90%;
+    margin:60px auto;
+
+}
+
+.comparison-table h1{
+
+    text-align:center;
+    margin-bottom:30px;
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+th,
+td{
+
+    padding:20px;
+    text-align:center;
+    border:1px solid #333;
+
+}
+
+th{
+
+    background:#8a2be2;
+    color:white;
+
+}
+
+td{
+
+    background:#1b1b1b;
+    color:white;
+
+}
+
+/* COMPARE WINNERS */
+.winner {
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.loser {
+    opacity: 0.7;
+}
+
+.winner-badge{
+    display: inline-block;
+    margin-top: 8px;
+    padding: 4px 10px;
+    background: #00ff88;
+    color: black;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
 /* SPECS */
 
 .specs{
@@ -650,31 +767,6 @@ body{
 
 }
 
-.buy-btn{
-
-    background:#00b894;
-
-    color:white;
-
-    border:none;
-
-    padding:16px 35px;
-
-    border-radius:35px;
-
-    cursor:pointer;
-
-    font-size:18px;
-
-    transition:.3s;
-
-}
-
-.buy-btn:hover{
-
-    background:#009c7c;
-
-}
 
 /* EXTRA INFO */
 
@@ -976,10 +1068,9 @@ footer p{
 }
 
 .brand-card:hover{
-    transform: translateY(-10px);
+    transform: translateY(px);
     background: #242424;
     border-color: #8a2be2;
-    box-shadow: 0 10px 30px rgba(138, 43, 226, .45);
 }
 
 /* BACK BUTTON */
@@ -1003,5 +1094,78 @@ footer p{
 
 .back-btn:hover {
     background: #6f1dd1;
-    transform: translateY(-3px);
+    transform: translateY(-0px);
+}
+
+/* RECENTLY VIEWED */
+.recent-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.recent-section h2{
+    font-size: 2rem;
+    margin-top: 12px;
+    color: #333;
+}
+
+#recentPhonesContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.recent-card {
+    width: 250px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.recent-card:hover {
+    transform: translateY(-1px);
+}
+
+.recent-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.recent-card h3{
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.recent-card button{
+    padding: 10px 18px;
+    border: none;
+    border: 8px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.recent-card button:hover {
+    background-color: #46a049;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px){
+
+    .recent-card{
+        width: 90%;
+    }
+
+    .recent-section h2{
+        font-size: 1.6rem;
+    }
 }

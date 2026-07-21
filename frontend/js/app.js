@@ -144,3 +144,26 @@ if(searchInput) {
     });
 
 }
+
+const searchPhone =
+document.getElementById("searchPhone");
+
+if(searchPhone){
+
+    searchPhone.addEventListener("input",()=>{
+
+        const value =
+        searchPhone.value.toLowerCase();
+
+        const filteredPhones =
+        allPhones.filter(phone =>
+            `${phone.brand} ${phone.model}`
+            .toLowerCase()
+            .includes(value)
+
+        );
+
+        displayPhones(filteredPhones);
+
+    });
+}
