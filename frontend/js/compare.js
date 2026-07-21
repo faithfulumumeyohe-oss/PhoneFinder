@@ -6,7 +6,7 @@ function showPhone(phone, containerId){
     document.getElementById(containerId).innerHTML = `
     
     <img
-    src="http://localhost:5000/images/${phone.image}"
+    src="https://phonefinder-api.onrender.com/images/${phone.image}"
     >
     
     <h2>${phone.brand} ${phone.model}</h2>

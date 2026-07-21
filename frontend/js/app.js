@@ -7,7 +7,7 @@ new URLSearchParams(window.location.search).get("brand");
 let allPhones = [];
 
 async function loadPhones() {
-    const response = await fetch("http://localhost:5000/api/phones");
+    const response = await fetch("https://phonefinder-api.onrender.com/api/phones");
     allPhones = await response.json();
 
     if (selectedBrand) {
@@ -32,7 +32,7 @@ function displayPhones(phones) {
             container.innerHTML += `
                 <div class="phone-card">
                     <img 
-                    src="http://localhost:5000/images/${phone.image}"
+                    src="https://phonefinder-api.onrender.com/images/${phone.image}"
                     alt="${phone.brand} ${phone.model}"
                     >
 
@@ -64,7 +64,7 @@ function viewDetails(id) {
 async function selectSecondPhone(id) {
 
     const response = await fetch(
-        `http://localhost:5000/api/phones/${id}`
+        `https://phonefinder-api.onrender.com/api/phones/${id}`
     );
 
     const phone2 = await response.json();

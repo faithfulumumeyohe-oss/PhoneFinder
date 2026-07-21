@@ -7,14 +7,14 @@ let phone;
 // Load the selecred phone's details
 async function loadPhones() {
     const response = await fetch(
-    `http://localhost:5000/api/phones/${id}`
+    `https://phonefinder-api.onrender.com/api/phones/${id}`
     );
 
 phone = await response.json();
 
 // Display phone details
 document.getElementById("phoneImage").src =
-    `http://localhost:5000/images/${phone.image}`;
+    `https://phonefinder-api.onrender.com/images/${phone.image}`;
 
     document.getElementById("phoneName").innerText =
     `${phone.brand} ${phone.model}`;
@@ -98,7 +98,7 @@ function displayRecentPhones() {
         <div class="recent-card">
         
         <img 
-        src="http://localhost:5000/images/${phone.image}"
+        src="https://phonefinder-api.onrender.com/images/${phone.image}"
         alt="${phone.brand} ${phone.model}">
         
         <h3>
